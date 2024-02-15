@@ -56,7 +56,7 @@ body {
   color: var(--accent-1) !important;
 }
 
-.btn-square {
+.btn-dark {
   border-radius: 5px;
 }
 
