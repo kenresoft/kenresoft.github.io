@@ -3,6 +3,8 @@
 :root {
   --primary: #192841;
   --secondary: #223658;
+  --tertiary: #273C56;
+  --bright: #2B4254;
   --light: #F2F2F2;
   --dark: #192841;
   --background: #192841;
@@ -11,6 +13,7 @@
   --accent-3: #1E2F4D;
   --accent-4: #E0115F;
   --accent-5: #e0e0e0;
+  --accent-6: #bdbdbd;
 }
 
 body {
@@ -37,9 +40,56 @@ body {
   background-color: var(--accent-2) !important;
 }
 
+/* .btn-secondary {
+  background-color: var(--accent-3) !important;
+  border-radius: 30px !important;
+} */
+
+.spacer-top {
+  /* margin-top: 22px !important; */
+}
+
 .btn-secondary {
   background-color: var(--accent-3) !important;
-  border-radius: 20px;
+  border-radius: 30px !important;
+  position: relative;
+  /* Required for positioning the tooltip */
+}
+
+/* Tooltip text */
+.btn-secondary::after {
+  content: attr(aria-label);
+  /* Use the title attribute as content */
+  position: absolute;
+  top: -100%;
+  /* Position below the button */
+  left: 50%;
+  /* Center horizontally */
+  transform: translateX(-50%);
+  background-color: var(--secondary);
+  /* Background color */
+  color: var(--accent-6);
+  /* Text color */
+  padding: 5px 10px;
+  /* Padding */
+  border-radius: 5px;
+  /* Border radius */
+  font-size: 14px;
+  /* Font size */
+  white-space: nowrap;
+  /* Prevent line breaks */
+  visibility: hidden;
+  /* Initially hidden */
+  opacity: 0;
+  /* Initially transparent */
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  /* Smooth transition */
+}
+
+/* Show tooltip on hover */
+.btn-secondary:hover::after {
+  visibility: visible;
+  opacity: 1;
 }
 
 .btn-secondary:hover,
@@ -48,7 +98,7 @@ body {
 }
 
 .text-primary {
-  --content: uuuuuu;
+  --content: kenresoft;
   color: var(--accent-1) !important;
 }
 
@@ -57,7 +107,7 @@ body {
 }
 
 .btn-dark {
-  border-radius: 5px;
+  border-radius: 5px !important;
 }
 
 .gradient-text {
@@ -65,9 +115,16 @@ body {
   font-size: 36px;
   font-weight: bold;
   background-image: linear-gradient(to right, var(--accent-1), var(--accent-2));
-  -webkit-background-clip: text; /* For Safari */
+  -webkit-background-clip: text;
+  /* For Safari */
   background-clip: text;
   color: transparent;
+}
+
+.light-box {
+  background: var(--accent-3);
+  border: none !important;
+  border-radius: 1px !important;
 }
 
 #spinner {
@@ -85,7 +142,8 @@ body {
 
 @media (max-width: 991.98px) {
   .sticky-lg-top.vh-100 {
-    height: 100% !important;
+    height: 100% !important; 
+    /* padding-top: 100px !important ; */
   }
 }
 
@@ -234,7 +292,7 @@ body {
 
 .service-item:hover i {
   /* background: var(--primary); */
-  background-image: linear-gradient(to right, var(--accent-5), var(--accent-3));
+  background-image: linear-gradient(to bottom, var(--primary), var(--tertiary), var(--accent-3));
   color: var(--light);
 }
 
