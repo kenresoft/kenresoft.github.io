@@ -48,6 +48,7 @@ body {
 }
 
 .text-primary {
+  --content: uuuuuu;
   color: var(--accent-1) !important;
 }
 
@@ -55,10 +56,15 @@ body {
   color: var(--accent-1) !important;
 }
 
+.btn-square {
+  border-radius: 5px;
+}
+
 .gradient-text {
+  --content: Sample Text Content;
   font-size: 36px;
   font-weight: bold;
-  background-image: linear-gradient(to right, #00B87B, #ffb300a4);
+  background-image: linear-gradient(to right, var(--accent-1), var(--accent-2));
   -webkit-background-clip: text; /* For Safari */
   background-clip: text;
   color: transparent;
@@ -113,6 +119,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  border: var(--accent-2) 1.5px solid;
 }
 
 .btn.btn-primary {
@@ -139,11 +146,11 @@ body {
 }
 
 .back-to-top i {
-  color: var(--primary);
+  color: var(--accent-2);
 }
 
 .back-to-top i:hover {
-  color: var(--dark);
+  color: var(--accent-1);
 }
 
 .back-to-top {
@@ -227,7 +234,7 @@ body {
 
 .service-item:hover i {
   /* background: var(--primary); */
-  background-image: linear-gradient(to right, #00B87B, #ffb300a4);
+  background-image: linear-gradient(to right, var(--accent-5), var(--accent-3));
   color: var(--light);
 }
 
