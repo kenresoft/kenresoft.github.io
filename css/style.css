@@ -83,6 +83,10 @@ body {
   overflow-x: hidden !important;
 }
 
+.text-justify {
+  text-align: justify;
+}
+
 .bg-secondary {
   background-color: var(--secondary) !important;
   border-radius: 10px !important;
