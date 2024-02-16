@@ -1,5 +1,3 @@
-/********** Template CSS **********/
-
 :root {
   --primary: #192841;
   --secondary: #223658;
@@ -16,9 +14,20 @@
   --accent-6: #bdbdbd;
 }
 
+/* Reset some default browser styles */
+body,
+h1,
+h2,
+p {
+   margin: 0;
+   padding: 0;
+}
+
 body {
   background-color: var(--primary) !important;
-  color: var(--accent-5);
+  color: var(--accent-5) !important;
+  min-height: 100vh !important;
+  overflow-x: hidden !important;
 }
 
 .bg-secondary {
@@ -40,50 +49,28 @@ body {
   background-color: var(--accent-2) !important;
 }
 
-/* .btn-secondary {
-  background-color: var(--accent-3) !important;
-  border-radius: 30px !important;
-} */
-
-.spacer-top {
-  /* margin-top: 22px !important; */
-}
-
 .btn-secondary {
   background-color: var(--accent-3) !important;
   border-radius: 30px !important;
   position: relative;
-  /* Required for positioning the tooltip */
 }
 
 /* Tooltip text */
 .btn-secondary::after {
   content: attr(aria-label);
-  /* Use the title attribute as content */
   position: absolute;
   top: -100%;
-  /* Position below the button */
   left: 50%;
-  /* Center horizontally */
   transform: translateX(-50%);
   background-color: var(--secondary);
-  /* Background color */
   color: var(--accent-6);
-  /* Text color */
   padding: 5px 10px;
-  /* Padding */
   border-radius: 5px;
-  /* Border radius */
   font-size: 14px;
-  /* Font size */
   white-space: nowrap;
-  /* Prevent line breaks */
   visibility: hidden;
-  /* Initially hidden */
   opacity: 0;
-  /* Initially transparent */
   transition: opacity 0.3s ease, visibility 0.3s ease;
-  /* Smooth transition */
 }
 
 /* Show tooltip on hover */
@@ -142,7 +129,7 @@ body {
 
 @media (max-width: 991.98px) {
   .sticky-lg-top.vh-100 {
-    height: 100% !important; 
+    height: 100% !important;
     position: sticky !important;
     /* padding-top: 100px !important ; */
   }
@@ -292,7 +279,6 @@ body {
 }
 
 .service-item:hover i {
-  /* background: var(--primary); */
   background-image: linear-gradient(to bottom, var(--primary), var(--tertiary), var(--accent-3));
   color: var(--light);
 }
@@ -304,7 +290,6 @@ body {
   top: 50%;
   left: 50%;
   font-size: 90px;
-  /* background: rgba(44, 62, 80, .9); */
   background: rgba(15, 15, 15, 0.9);
   opacity: 0;
   transition: .5s;
