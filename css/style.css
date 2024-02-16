@@ -14,13 +14,66 @@
   --accent-6: #bdbdbd;
 }
 
+
+.cyan {
+  background-color: #0dcaf0 !important
+}
+
+.blue {
+  background-color: #0d6efd !important
+}
+
+.indigo {
+  background-color: #6610f2 !important
+}
+
+.purple {
+  background-color: #6f42c1 !important
+}
+
+.pink {
+  background-color: #d63384 !important
+}
+
+.red {
+  background-color: #dc3545 !important
+}
+
+.orange {
+  background-color: #fd7e14 !important
+}
+
+.yellow {
+  background-color: #ffc107 !important
+}
+
+.green {
+  background-color: #00B87B !important
+}
+
+.teal {
+  background-color: #20c997 !important
+}
+
+.gray {
+  background-color: #999999 !important
+}
+
+.white {
+  background-color: #eee;
+}
+
+.black {
+  background-color: #333;
+}
+
 /* Reset some default browser styles */
 body,
 h1,
 h2,
 p {
-   margin: 0;
-   padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -53,6 +106,8 @@ body {
   background-color: var(--accent-3) !important;
   border-radius: 30px !important;
   position: relative;
+  margin-top: 60px !important;
+  margin-bottom: 20px !important;
 }
 
 /* Tooltip text */
@@ -130,8 +185,6 @@ body {
 @media (max-width: 991.98px) {
   .sticky-lg-top.vh-100 {
     height: 100% !important;
-    position: sticky !important;
-    /* padding-top: 100px !important ; */
   }
 }
 
