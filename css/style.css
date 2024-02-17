@@ -170,7 +170,12 @@ body {
 .light-box {
   background: var(--accent-3);
   border: none !important;
-  border-radius: 1px !important;
+  border-radius: 2px !important;
+}
+
+.brd {
+  border: none !important;
+  border-radius: 2px !important;
 }
 
 #spinner {
