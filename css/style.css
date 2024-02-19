@@ -399,6 +399,7 @@ body {
   background: var(--accent-3) !important;
   border-top:3px solid var(--dark);
   border-bottom:3px solid var(--dark);
+  border-radius: 4px;
   position: relative;
   transition: .5s;
   z-index: 999;
@@ -407,10 +408,10 @@ body {
 .navbar .navbar-brand {
   color: var(--light);
   margin: 0;
-  font-size: 35px;
+  font-size: 20px;
   line-height: 0px;
   font-weight: 900;
-  letter-spacing: 3.5px;
+  letter-spacing: 1.5px;
   transition: .5s;
 }
 
