@@ -81,8 +81,16 @@ body {
   color: var(--accent-5) !important;
   min-height: 100vh !important;
   overflow-x: hidden !important;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   ;
+}
+
+.brand {
+  font-family: 'Roboto condensed', sans-serif;
+}
+
+.owner {
+  font-family: 'Inter', sans-serif;
 }
 
 .text-justify {
@@ -397,8 +405,8 @@ body {
 /*** NavBar ***/
 .navbar {
   background: var(--accent-3) !important;
-  border-top:3px solid var(--dark);
-  border-bottom:3px solid var(--dark);
+  border-top: 3px solid var(--dark);
+  border-bottom: 3px solid var(--dark);
   border-radius: 4px;
   position: relative;
   transition: .5s;
