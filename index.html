@@ -14,7 +14,13 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -32,7 +38,9 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+
+
     <!-- Spinner Start -->
     <div id="spinner"
         class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -43,9 +51,39 @@
     <!-- Spinner End -->
 
     <div class="container">
-        <div class="row g-5">
-            <div class="col-lg-4 sticky-lg-top vh-100">
+        <div class="row g-4">
+            <div>
+                <!-- Nav Bar Start -->
+                <div class="navbar navbar-expand-lg bg-light navbar-dark overflow-hidden">
+                    <div class="container-fluid">
+                        <a href="index.html" class="navbar-brand">- kenresoft -</a>
+                        <button type="button" class="navbar-toggler" data-toggle="collapse"
+                            data-target="#navbarCollapse">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                            <div class="navbar-nav ml-auto">
+                                <!-- <a href="#home" class="nav-item nav-link active">Home</a> -->
+                                <a href="#about" class="nav-item nav-link">About</a>
+                                <a href="#skills" class="nav-item nav-link">Skills</a>
+                                <a href="#experience" class="nav-item nav-link">Experience</a>
+                                <a href="#services" class="nav-item nav-link">Services</a>
+                                <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
+                                <a href="#testimonial" class="nav-item nav-link">Testimonial</a>
+                                <a href="#blog" class="nav-item nav-link">Blog</a>
+                                <a href="#contact" class="nav-item nav-link">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Nav Bar End -->
+            </div>
+
+            <div class="col-lg-4 sticky-lg-top vh-100 mt-0">
+
                 <div class="d-flex flex-column h-100 text-center light-box overflow-hidden shadow brd">
+
                     <!-- <img class="w-100 img-fluid mb-4" src="img/profile.jpg" alt="Image"> -->
                     <div>
                         <img class="w-75 img-fluid mb-4" src="img/profile.jpg" alt="Circular Image"
@@ -342,7 +380,7 @@
                     <div class="row g-4">
                         <div class="col-md-6">
                             <div class="service-item">
-                                <i class="fab fa-2x fa-android mx-auto mb-4"></i>
+                                <i class="fas fa-2x fa-mobile-alt mx-auto mb-4"></i>
                                 <h5 class="mb-2">Mobile App Development</h5>
                                 <p class="mb-0">Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet
                                     lorem lorem lorem est amet labore</p>
@@ -350,7 +388,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="service-item">
-                                <i class="fa fa-2x fa-laptop-code mx-auto mb-4"></i>
+                                <i class="fas fa-2x fa-laptop-code mx-auto mb-4"></i>
                                 <h5 class="mb-2">Web Development</h5>
                                 <p class="mb-0">Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet
                                     lorem lorem lorem est amet labore</p>
@@ -358,7 +396,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="service-item">
-                                <i class="fa fa-2x fa-laptop-code mx-auto mb-4"></i>
+                                <i class="fas fa-2x fa-code mx-auto mb-4"></i>
                                 <h5 class="mb-2">Core Programming</h5>
                                 <p class="mb-0">Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet
                                     lorem lorem lorem est amet labore</p>
@@ -366,7 +404,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="service-item">
-                                <i class="fa fa-2x fa-search mx-auto mb-4"></i>
+                                <i class="fas fa-2x fa-chart-line mx-auto mb-4"></i>
                                 <h5 class="mb-2">SEO</h5>
                                 <p class="mb-0">Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet
                                     lorem lorem lorem est amet labore</p>
@@ -374,7 +412,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="service-item">
-                                <i class="fa fa-2x fa-edit mx-auto mb-4"></i>
+                                <i class="fas fa-2x fa-edit mx-auto mb-4"></i>
                                 <h5 class="mb-2">Creative Writing</h5>
                                 <p class="mb-0">Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet
                                     lorem lorem lorem est amet labore</p>
@@ -382,7 +420,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="service-item">
-                                <i class="fa fa-2x fa-teach mx-auto mb-4"></i>
+                                <i class="fas fa-2x fa-users mx-auto mb-4"></i>
                                 <h5 class="mb-2">Coaching/Mentorship</h5>
                                 <p class="mb-0">Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet
                                     lorem lorem lorem est amet labore</p>
