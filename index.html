@@ -3,10 +3,18 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Kenresoft Dev - My Personal Website</title>
+    <title>Kenresoft's Portfolio: Building Digital Solutions with Passion</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Free Website Template" name="keywords">
-    <meta content="Free Website Template" name="description">
+    <meta name="keywords" content="Software Development, Mobile App Development, Web Development, 
+        Flutter, Android, iOS, User Experience (UX), User Interface (UI), Responsive Design, 
+        Code Quality, Innovation, Passionate Developer, Kenresoft, Digital Solutions, Technology">
+
+    <meta content="Explore Kenresoft's digital realm, where passion meets innovation. 
+        As a skilled software developer specializing in mobile and web development, 
+        Kenresoft is dedicated to elevating user experiences through meticulously crafted code. 
+        Discover a portfolio showcasing impactful projects, built with a focus on quality, creativity, 
+        and user-centric design. Join the Kenresoft community and embark on a journey of digital transformation."
+        name="description">
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
@@ -14,13 +22,8 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -55,8 +58,10 @@
             <div>
                 <!-- Nav Bar Start -->
                 <div class="navbar navbar-expand-lg bg-light navbar-dark overflow-hidden">
-                    <div class="container-fluid">
-                        <a href="index.html" class="navbar-brand">- kenresoft -</a>
+                    <div class="container-fluid" style="display: flex; flex-wrap: initial;">
+                        <div style="flex-basis: 1;">
+                            <a href="index.html" class="navbar-brand">KenReSoft</a>
+                        </div>
                         <button type="button" class="navbar-toggler" data-toggle="collapse"
                             data-target="#navbarCollapse">
                             <span class="navbar-toggler-icon"></span>
@@ -83,8 +88,6 @@
             <div class="col-lg-4 sticky-lg-top vh-100 mt-0">
 
                 <div class="d-flex flex-column h-100 text-center light-box overflow-hidden shadow brd">
-
-                    <!-- <img class="w-100 img-fluid mb-4" src="img/profile.jpg" alt="Image"> -->
                     <div>
                         <img class="w-75 img-fluid mb-4" src="img/profile.jpg" alt="Circular Image"
                             style="clip-path: circle();">
@@ -97,9 +100,6 @@
                             Developer, Content Writer, Data Analyst</div>
                     </div>
                     <div class="d-flex justify-content-center mt-auto mb-3">
-                        <!-- <a class="btn btn-secondary btn-square mx-1" href="https://twitter.com/kenresoft"><i class="fab fa-twitter"></i></a> -->
-                        <!-- <a class="btn btn-secondary btn-square mx-1" href="https://facebook.com/kenresoft"><i class="fab fa-facebook-f"></i></a> -->
-                        <!-- <a class="btn btn-secondary btn-square mx-1" href="https://instagram.com/kenresoft"><i class="fab fa-instagram"></i></a> -->
                         <a class="btn btn-secondary btn-square mx-1" aria-label="GitHub Profile"
                             href="https://github.com/kenresoft"><i class="fab fa-github"></i></a>
                         <a class="btn btn-secondary btn-square mx-1" aria-label="LinkedIn Profile"
@@ -121,7 +121,7 @@
             </div>
             <div class="col-lg-8">
                 <!-- About Start -->
-                <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
+                <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s" id="about">
                     <h1 class="title pb-3 mb-5">About Me</h1>
                     <p class="mb-3 text-justify">I am a driven and results-oriented Software Developer with a keen focus
                         on crafting
@@ -213,7 +213,7 @@
                 <!-- About End -->
 
                 <!-- Skills Start -->
-                <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
+                <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s" id="skills">
                     <h1 class="title pb-3 mb-5">Skills</h1>
                     <div class="row">
                         <div class="col-sm-6">
@@ -325,7 +325,7 @@
                 <!-- Skills End -->
 
                 <!-- Expericence Start -->
-                <section class="py-5 wow fadeInUp" data-wow-delay="0.1s">
+                <section class="py-5 wow fadeInUp" data-wow-delay="0.1s" id="experience">
                     <h1 class="title pb-3 mb-5">Expericence</h1>
                     <div class="border-start border-2 border-light pt-2 ps-5">
                         <div class="position-relative mb-4">
@@ -375,7 +375,7 @@
                 <!-- Subscribe End -->
 
                 <!-- Services Start -->
-                <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
+                <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s" id="services">
                     <h1 class="title pb-3 mb-5">Services</h1>
                     <div class="row g-4">
                         <div class="col-md-6">
@@ -431,7 +431,7 @@
                 <!-- Services End -->
 
                 <!-- Portfolio Start -->
-                <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
+                <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s" id="portfolio">
                     <h1 class="title pb-3 mb-5">Portfolio</h1>
                     <div class="row">
                         <div class="col-12">
@@ -495,7 +495,7 @@
                 <!-- Portfolio End -->
 
                 <!-- Testimonial Start -->
-                <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
+                <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s" id="testimonial">
                     <h1 class="title pb-3 mb-5">Testimonial</h1>
                     <div class="owl-carousel testimonial-carousel">
                         <div class="text-left">
