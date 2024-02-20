@@ -421,6 +421,9 @@ body {
   font-weight: 900;
   letter-spacing: 1.5px;
   transition: .5s;
+  background-color: var(--background);
+  border-radius: 100px;
+  padding: 6px;
 }
 
 .navbar .navbar-brand img {
@@ -487,7 +490,9 @@ body {
 
   .navbar .navbar-nav {
     margin-top: 10px;
+    padding-left: 20px;
     background: var(--primary);
+    border-radius: 10px;
   }
 
   .navbar a.nav-link {
