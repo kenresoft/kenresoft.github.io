@@ -503,3 +503,11 @@ body {
     box-shadow: none;
   }
 }
+
+.gradient-text {
+  font-weight: bold !important;
+  background: linear-gradient(45deg, var(--accent-1), var(--accent-2), var(--accent-1)) !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  color: transparent !important;
+}
