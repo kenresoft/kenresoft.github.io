@@ -7,7 +7,7 @@ Welcome to the GitHub repository for my portfolio website! This website serves a
 
 ## Description
 
-[Your Website Name] is a professional portfolio showcasing my expertise in mobile and web development, as well as my contributions to the tech community. It features a collection of projects, articles, and resources that highlight my skills and accomplishments.
+It is a professional portfolio showcasing my expertise in mobile and web development, as well as my contributions to the tech community. It features a collection of projects, articles, and resources that highlight my skills and accomplishments.
 
 ## About Me
 
@@ -22,8 +22,6 @@ I am a results-driven Software Developer with a passion for creating innovative 
 
 ## Technologies Used
 
-- Flutter for mobile app development
-- Flutter Web for web development
 - HTML, CSS, and JavaScript for frontend development
 - GitHub Pages for hosting
 
@@ -47,6 +45,6 @@ This project is licensed under the [MIT License](https://opensource.org/licenses
 
 ## Contact
 
-For inquiries or collaboration opportunities, you can reach me via email at [amadikenneth8@gmail.com](mailto:amadikenneth8@gmail.com) or connect with me on [LinkedIn](https://www.linkedin.com/in/kenresoft).
+For inquiries or collaboration opportunities, you can reach me via email at [amadikenneth8@gmail.com](mailto:amadikenneth8@gmail.com) or connect with me on [LinkedIn](https://linkedin.com/in/kenresoft).
 
 Thank you for visiting my portfolio website!
