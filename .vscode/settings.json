@@ -1,5 +1,3 @@
 {
-    "github-actions.workflows.pinned.workflows": [
-        "dynamic/pages/pages-build-deployment"
-    ]
+    "github-actions.workflows.pinned.workflows": []
 }
