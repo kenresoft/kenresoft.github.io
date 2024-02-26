@@ -510,7 +510,7 @@ body {
 .blog {
   position: relative;
   width: 100%;
-  padding: 45px 0 15px 0; 
+  padding: 45px 0 15px 0;
 }
 
 .blog .blog-item {
@@ -586,8 +586,37 @@ body {
 
 .gradient-text {
   font-weight: bold !important;
-  background: linear-gradient(45deg, var(--accent-1), var(--accent-2), var(--accent-1)) !important;
   background-clip: text !important;
   -webkit-background-clip: text !important;
   color: transparent !important;
+  -webkit-animation: bg-anim .2s infinite alternate !important;
+  animation: bg-anim 1s infinite alternate !important;
+}
+
+@-webkit-keyframes bg-anim {
+  0% {
+    background: linear-gradient(45deg, var(--accent-1), var(--accent-2), var(--accent-6));
+  }
+
+  50% {
+    background: linear-gradient(45deg, var(--accent-2), var(--accent-6), var(--accent-1));
+  }
+
+  100% {
+    background: linear-gradient(45deg, var(--accent-6), var(--accent-1), var(--accent-2));
+  }
+}
+
+@keyframes bg-anim {
+  0% {
+    background: linear-gradient(45deg, var(--accent-1), var(--accent-2), var(--accent-6));
+  }
+
+  50% {
+    background: linear-gradient(45deg, var(--accent-2), var(--accent-6), var(--accent-1));
+  }
+
+  100% {
+    background: linear-gradient(45deg, var(--accent-6), var(--accent-1), var(--accent-2));
+  }
 }
