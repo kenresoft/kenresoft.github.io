@@ -122,6 +122,8 @@ body {
   position: relative;
   margin-top: 60px !important;
   margin-bottom: 20px !important;
+  font-size: 16px !important;
+  transition: font-size 200ms ease-in-out !important;
 }
 
 /* Tooltip text */
@@ -151,6 +153,8 @@ body {
 .btn-secondary:hover,
 .btn-secondary:focus {
   background-color: var(--accent-2) !important;
+  font-size: 24px !important;
+  box-shadow: .1px .1px 5px rgb(0, 100, 215);
 }
 
 .text-primary {
@@ -589,8 +593,8 @@ body {
   background-clip: text !important;
   -webkit-background-clip: text !important;
   color: transparent !important;
-  -webkit-animation: bg-anim .2s infinite alternate !important;
-  animation: bg-anim 1s infinite alternate !important;
+  -webkit-animation: bg-anim .6s infinite alternate !important;
+  animation: bg-anim 6s infinite alternate !important;
 }
 
 @-webkit-keyframes bg-anim {
@@ -618,5 +622,43 @@ body {
 
   100% {
     background: linear-gradient(45deg, var(--accent-6), var(--accent-1), var(--accent-2));
+  }
+}
+
+/* a.read-more:hover::after {
+  -webkit-animation: read-more-text 2s reverse;
+  animation: read-more-text 2s reverse;
+} */
+
+a.read-more:hover {
+  -webkit-animation: read-more-text 2s infinite alternate;
+  animation: read-more-text 2s infinite alternate;
+}
+
+@-webkit-keyframes read-more-text {
+  0% {
+    transform: translateX(0px);
+  }
+
+  0% {
+    transform: translateX(-1px);
+  }
+
+  100% {
+    transform: translateX(5px);
+  }
+}
+
+@keyframes read-more-text {
+  0% {
+    transform: translateX(0px);
+  }
+
+  0% {
+    transform: translateX(-1px);
+  }
+
+  100% {
+    transform: translateX(5px);
   }
 }
