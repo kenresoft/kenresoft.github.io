@@ -662,3 +662,24 @@ a.read-more:hover {
     transform: translateX(5px);
   }
 }
+
+i.fa-anim {
+  width: 80px;
+  transition: width 2s linear;
+}
+
+i.fa-anim:hover {
+  width: 50px;
+  animation: fab 5s ease-in-out 0s infinite alternate;
+  -webkit-animation: fab 5s ease-in-out 0s infinite alternate;
+}
+
+@keyframes fab {
+  0% {
+    transform: rotateY(0deg);
+  }
+
+  100% {
+    transform: rotateY(180deg);
+  }
+}
